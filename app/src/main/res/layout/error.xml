@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <!-- android:src="@drawable/img_error" -->
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Error"
+            android:layout_marginTop="8dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/retry"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="#AfAFAF"
+            android:text="سعی مجدد"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

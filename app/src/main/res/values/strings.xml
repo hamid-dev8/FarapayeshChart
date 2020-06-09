@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FarapayeshChart</string>
+
+
+    <string name="empty">نتیجه ای پیدا نشد</string>
+
+
 </resources>
