@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.dimache.farapayeshchart.base.di.ApplicationContext;
 import com.dimache.farapayeshchart.base.di.DaggerAppComponent;
+import com.dimache.farapayeshchart.base.remote.RetrofitBuilder;
 
 import javax.inject.Inject;
 
@@ -23,7 +24,7 @@ public class App extends DaggerApplication
     public void onCreate() {
         super.onCreate();
         appContext = getApplicationContext();
-
+        RetrofitBuilder.init();
 
     }
 
