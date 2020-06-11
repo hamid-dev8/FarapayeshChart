@@ -11,21 +11,22 @@ import com.dimache.farapayeshchart.base.remote.util.RemoteModel;
 import com.dimache.farapayeshchart.base.remote.util.ServerErrorException;
 import com.google.gson.Gson;
 
+import java.util.List;
+
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import retrofit2.HttpException;
 
 public abstract class RepositoryObserver<T> implements Observer<T> {
 
-
-    @Override
-    public void onSubscribe(Disposable d) {
-
-    }
-
     @Override
     public void onNext(T t) {
-
+        if (t == null)
+            onNotFound();
+        else if (t instanceof List && ((List) t).isEmpty())
+            onNotFound();
+        else
+            onResponse(t);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.dimache.farapayeshchart.main;
+package com.dimache.farapayeshchart.main.mainact;
 
 
 import com.dimache.farapayeshchart.base.di.ActivityScope;

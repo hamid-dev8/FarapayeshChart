@@ -1,5 +1,7 @@
 package com.dimache.farapayeshchart.base.remote.util;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by User on 12/31/2017.
  *
@@ -11,6 +13,7 @@ package com.dimache.farapayeshchart.base.remote.util;
 public class RemoteModel<T, E> {
 
     /*main data of json*/
+    @SerializedName("results")
     private T data;
     /*meta data of json*/
     private E meta;

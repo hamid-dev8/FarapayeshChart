@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitBuilder {
 
-    private static final String baseUrl = "http://harajino.isatelco.com/api/v1/";
+    private static final String baseUrl = "https://api.thevirustracker.com";
     public static RetrofitBuilder INSTANCE;
     public static WebApi webApi;
 
@@ -39,10 +39,10 @@ public class RetrofitBuilder {
                             Request original = chain.request();
 
                             Request request = original.newBuilder()
-                                    .header("uuid", SPManager.getInstance().getUuid())
-                                    .header("Authorization", SPManager.getInstance().getToken())
                                     .build();
 
+                            /* .header("x-rapidapi-host", "covid-19-data.p.rapidapi.com")
+                                    .header("x-rapidapi-key", "db2b6a314emsh8212c008cae0fd0p166633jsna471a6097be9")*/
                             return chain.proceed(request);
                         }
                     })
@@ -59,6 +59,7 @@ public class RetrofitBuilder {
                     .client(okHttpClient)
                     .build();
 
+            webApi = retrofit.create(WebApi.class);
             INSTANCE = new RetrofitBuilder();
         }
     }

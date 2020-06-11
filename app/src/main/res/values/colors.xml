@@ -3,4 +3,22 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="confirmed">#512DA8</color>
+    <color name="critical">#D32F2F</color>
+    <color name="death">#000</color>
+    <color name="recovered">#388E3C</color>
+    <color name="active_cases">#FDD835</color>
+
+
+    <color name="text">#303030</color>
+
+    <color name="pie">#FBC02D</color>
+    <color name="pie_selected">#F9A825</color>
+
+    <color name="line">#AFB42B</color>
+    <color name="line_selected">#9E9D24</color>
+
 </resources>

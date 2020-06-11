@@ -1,9 +1,10 @@
 package com.dimache.farapayeshchart.base.di;
 
 
-import com.dimache.farapayeshchart.main.MainActivity;
-import com.dimache.farapayeshchart.main.MainModule;
-import com.dimache.farapayeshchart.main.MainProvider;
+import com.dimache.farapayeshchart.main.mainact.MainActivity;
+import com.dimache.farapayeshchart.main.mainact.MainModule;
+import com.dimache.farapayeshchart.main.mainact.MainProvider;
+import com.dimache.farapayeshchart.main.mainact.pie.PieModule;
 
 import dagger.Module;
 import dagger.android.ContributesAndroidInjector;
