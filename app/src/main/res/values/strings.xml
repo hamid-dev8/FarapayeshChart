@@ -3,6 +3,6 @@
 
 
     <string name="empty">نتیجه ای پیدا نشد</string>
-
+    <string name="desc">لازم به ذکر است نمودار دایره ای داینامیک و نمودار خطی استاتیک هستند و نمودار اول نیازمند دسترسی به اینترنت میباشد.\n تکنولوژی های استفاده شده در این برنامه : Retrofit, Custom Utils , Clean architecture , MVP architecture ,dagger  </string>
 
 </resources>

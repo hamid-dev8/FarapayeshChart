@@ -15,6 +15,18 @@ public class RemoteModel<T, E> {
     /*main data of json*/
     @SerializedName("results")
     private T data;
+
+    @SerializedName("countryitems")
+    private T data2;
+
+    public T getData2() {
+        return data2;
+    }
+
+    public void setData2(T data2) {
+        this.data2 = data2;
+    }
+
     /*meta data of json*/
     private E meta;
 

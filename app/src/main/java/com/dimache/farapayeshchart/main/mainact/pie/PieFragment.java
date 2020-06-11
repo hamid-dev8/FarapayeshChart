@@ -79,8 +79,15 @@ public class PieFragment extends MVPDataFragment<PieContract.Presenter> implemen
 
         PieDataSet set = new PieDataSet(entries, "CoronaVirus Results");
         set.setColors(colors);
+        set.setUsingSliceColorAsValueLineColor(true);
+        set.setValueTextColor(ContextCompat.getColor(this.getActivity(),R.color.white));
+        set.setValueTextSize(12f);
         PieData data = new PieData(set);
+        pieChart.setCenterText("FaraPayesh Amin Co.");
+        pieChart.setCenterTextColor(ContextCompat.getColor(this.getActivity(),R.color.text));
+        pieChart.setCenterTextSize(16f);
         pieChart.setData(data);
+        pieChart.animateXY(500,500);
         pieChart.invalidate();
         //Toast.makeText(this.getActivity(),totalInfected1.getConfirmed(),Toast.LENGTH_LONG).show();
     }

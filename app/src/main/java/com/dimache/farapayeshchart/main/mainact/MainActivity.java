@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.dimache.farapayeshchart.R;
 import com.dimache.farapayeshchart.base.baseComponents.BaseActivity;
+import com.dimache.farapayeshchart.main.mainact.line.LineFragment;
 import com.dimache.farapayeshchart.main.mainact.pie.PieFragment;
 
 import butterknife.BindView;
@@ -43,7 +44,7 @@ public class MainActivity extends BaseActivity {
         txt_line.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                addFragment(new LineFragment(),"line",true,container.getId());
             }
         });
     }

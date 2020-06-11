@@ -15,7 +15,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitBuilder {
 
-    private static final String baseUrl = "https://api.thevirustracker.com";
+    private static final String baseUrl = "https://thevirustracker.com";
     public static RetrofitBuilder INSTANCE;
     public static WebApi webApi;
 
